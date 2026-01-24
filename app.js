@@ -102,6 +102,11 @@ app.post('/logout', (req, res) => {
   });
 });
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the Auth API!');
+});
+
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
